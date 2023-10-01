@@ -69,3 +69,7 @@
   border-top: 3px solid #000000;
   border-bottom: 3px solid #000000;
 }
+
+.bg {
+  background-color:rgb(123, 252, 252);
+}
