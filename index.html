@@ -2,52 +2,62 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <title>Я кто?</title>
+        <title>Аркадные Авиасимы</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="print.css">
     </head>
-    <body>
+    <body class="main">
         <header class="header">
-            <div class="container"></div>
-            <h1>o((>ω<))o Я Кто? ( •̀ ω •́ )✧</h1>
-            <nav>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="goyda.html">Таблица</a></li>
-                <li><a href="about.html">Что я делаю</a></li>
-                <li><a href="auth.html">Авторизация</a></li>
-                <li><a href="feedback.html">Форма отзыва</a></li>
-            </nav>
+            <div class="header_text">
+                <li><a href="https://store.steampowered.com/app/895870/Project_Wingman/">Project Wingman</a></li>
+                <li><a href="https://store.steampowered.com/app/381020/Sky_Rogue/">Sky Rogue</a></li>
+                <li><a href="https://store.steampowered.com/app/1347550/Tiny_Combat_Arena/">Tiny Combat Arena</a></li>
+                <li style="float: right;"><a href="index.html">Главная</a></li>
+            </div>
         </header>
-        <main class="main">
-            <nav>
-                <ul>
-                    <li><audio id="player" src="sounds/goyda.mp4"></audio>
-                        <div>
-                            <a onclick="document.getElementById('player').play()">ГОЙДА</a>
-                        </div>
-                    </li>
-                    
-                </ul>
-            </nav>
-            <aside><img src="images/bearcore.gif" width="120"></aside>
-            <h2>Кто я?</h2>
-            <p id="me"> Моё имя - Омлет с Сыром, я студентик.</p>
-            <pre class="cat">
- ╱|、
-(˚ˎ。7  
-|、˜〵          
-じしˍ,)ノ
-            </pre>
+        <main>
+            <div>
+                <div class="text-main">
+                    <h1 class="h1">Что такое Авиасимулятор?</h1><br>
+                    <p>Авиасимулятор - игра или приложение на ПК или игровую приставку, <br> позволяющее игроку взять на себя управление самолетом.</p>
+                    <p>От реалистичных до управляемых парой клавиш, <br> от бесплатных до ценников более 4000 рублей - авиасимы всегда найдут своего игрока.</p>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="img-box">
+                    <div class="img-game">
+                        <img src="images\tnc.jpg">
+                    </div>
+                    <div>
+                        <button class="go-btn">
+                            <span class="tnc"><a href="tnc.html"> О Tiny Combat Arena </a></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img-game">
+                        <img src="images\srg.jpg">
+                    </div>
+                    <div>
+                        <button class="go-btn">
+                            <span class="srg"><a href="skr.html"> О Sky Rogue </a></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img-game">
+                        <img src="images\prjw.jpg">
+                    </div>
+                    <div>
+                        <button class="go-btn">
+                            <span class="prjw"><a href="prjw.html"> О Project Wingman </a></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer class="footer">
-            
-            &copy; Я Кто &trade;
-            <p>Подпишись на мой <a href="https://t.me/imwhob">паблик</a></p>
-            <aside>
-                <div>Прежде, чем нажимать на Евгения или слово "ГОЙДА", лучше снимите наушники/убавьте громкость браузера :3</div>
-                <audio id="oooblya" src="sounds/zhenya.ogg"></audio>
-                <a onclick="document.getElementById('oooblya').play();">
-                <img src="images/где-боеприпасы.gif" width="50">
-            </a></aside>
+            <p class="footer_text">Made by Я Кто &#8482;</p>
         </footer>
     </body>
 </html>

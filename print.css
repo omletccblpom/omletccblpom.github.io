@@ -1,0 +1,51 @@
+.header_text li {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline;
+    text-align: center;
+    color:black;
+    font-size: 24px;
+    padding-left: 30px;
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.h1 {
+    font-family: Arial, serif;
+    text-align: center;
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    font-size: 40px;
+}
+
+.text-main p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 24px;
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.go-btn span {
+    color: #ffffff;
+}
+
+.link p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline;
+    float: center;
+    color:black;
+    font-size: 24px;
+    padding-left: 30px;
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.go-btn a {
+    color: white;
+}
+
+.footer_text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline;
+    text-align: center;
+    color:black;
+    font-size: 24px;
+    padding-left: 30px;
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
