@@ -1,63 +1,102 @@
 <!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>Аркадные Авиасимы</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="print.css">
-    </head>
-    <body class="main">
-        <header class="header">
-            <div class="header_text">
-                <li><a href="https://store.steampowered.com/app/895870/Project_Wingman/">Project Wingman</a></li>
-                <li><a href="https://store.steampowered.com/app/381020/Sky_Rogue/">Sky Rogue</a></li>
-                <li><a href="https://store.steampowered.com/app/1347550/Tiny_Combat_Arena/">Tiny Combat Arena</a></li>
-                <li style="float: right;"><a href="index.html">Главная</a></li>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Веб-тестирование</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body class="bg-warning-subtle">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <a class="navbar-brand">
+                <img src="images/sukhoi.png" alt="Логотип" width="150">
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#2">О проекте</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#3">Контакты</a>
+                </li>
+              </ul>
             </div>
-        </header>
-        <main>
+          </div>
+        </nav>
+    </header>
+    <section class="py-5 text-center" id="1">
+        <div class="container">
+          <h1 class="display-3">Разработка вертолета Ка-62</h1>
+          <p class="lead">Проект по созданию многоцелевого среднего вертолета Ка-62 направлен на создание нового, конкурентноспособного вертолета, способного занять освободившуюся нишу среднегабаритных вертолетов. ОКБ им. Сухого распологает всеми возможностями, чтобы подобный вертолёт был воплощен в жизнь в кратчайшие сроки.</p>
+        </div>
+      </section>
+
+      <section class="py-5" id="2">
+        <div class="container">
+             <h2 class="text-center mb-5 mt-5 display-4">Особенности и преимущества Ка-62</h2>
+          <div class="row">
+            <div class="col-lg-4 mb-4">
+              <h3>Мощность и экономичность</h3>
+              <p>С двумя двигателями ВК-1600В Ка-62 прекрасно подходит для транспортировок грузов до 2,5 тонн, или же 15 человек на борту + экипаж. С новыми двигателям Ка-62 в 2 раза более экономичен, чем Ми-8.</p>
+            </div>
+            <div class="col-lg-4 mb-4">
+              <h3>Надежность и легкость в обслуживании</h3>
+              <p>Ка-62 создан на основе самых современных технологий авиастроения, позволяя сделать вертолет устойчивым даже при ветре в 10 м/с, а благодаря модульному дизайну Ка-62 гораздо более прост в техобслуживании, чем аналогичные вертолеты.</p>
+            </div>
+            <div class="col-lg-4 mb-4">
+              <h3>Обучение экипажа и наземного персонала</h3>
+              <p>Благодаря самым современным решениям в области БРЭО, Ка-62 легок в переобучении персонала как с вертолетов меньших размеров, так и с больших. Пилот Ми-8 будет удивлен, когда увидит, насколько удобен полет на Ка-62!</p>
+            </div>
             <div>
-                <div class="text-main">
-                    <h1 class="h1">Что такое Авиасимулятор?</h1><br>
-                    <p>Авиасимулятор - игра или приложение на ПК или игровую приставку, <br> позволяющее игроку взять на себя управление самолетом.</p>
-                    <p>От реалистичных до управляемых парой клавиш, <br> от бесплатных до ценников более 4000 рублей - авиасимы всегда найдут своего игрока.</p>
-                </div>
+                <img src="images/Ka-62.jpg" class="img-fluid" alt="Изображение проекта">
             </div>
-            <div class="flex">
-                <div class="img-box">
-                    <div class="img-game">
-                        <img src="images\tnc.jpg">
-                    </div>
-                    <div>
-                        <button class="go-btn">
-                            <span class="tnc"><a href="tnc.html"> О Tiny Combat Arena </a></span>
-                        </button>
-                    </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 bg-light bg-info-subtle" id="3">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2>Свяжитесь с нами</h2>
+              <p>Оставьте нам сообщение и мы свяжемся с вами в кратчайшие сроки.</p>
+              <form>
+                <div class="mb-3">
+                  <label for="inputName" class="form-label">Ваше имя</label>
+                  <input type="text" class="form-control" id="inputName" placeholder="Введите ваше имя">
                 </div>
-                <div class="img-box">
-                    <div class="img-game">
-                        <img src="images\srg.jpg">
-                    </div>
-                    <div>
-                        <button class="go-btn">
-                            <span class="srg"><a href="skr.html"> О Sky Rogue </a></span>
-                        </button>
-                    </div>
+                <div class="mb-3">
+                  <label for="inputEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Введите ваш email">
                 </div>
-                <div class="img-box">
-                    <div class="img-game">
-                        <img src="images\prjw.jpg">
-                    </div>
-                    <div>
-                        <button class="go-btn">
-                            <span class="prjw"><a href="prjw.html"> О Project Wingman </a></span>
-                        </button>
-                    </div>
+                <div class="mb-3">
+                  <label for="inputMessage" class="form-label">Сообщение</label>
+                  <textarea class="form-control" id="inputMessage" rows="4" placeholder="Введите ваше сообщение"></textarea>
                 </div>
+                <button type="submit" class="btn btn-primary">Отправить</button>
+              </form>
             </div>
-        </main>
-        <footer class="footer">
-            <p class="footer_text">Made by Я Кто &#8482;</p>
-        </footer>
-    </body>
+            <div class="col-lg-6">
+              <h2>Контакты:</h2>
+              <ul class="list-unstyled">
+                <li>Телефон: +7 (XXX) XXX-XX-XX</li>
+                <li>Email: lordofbeer@memeware.net</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+        
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
 </html>
