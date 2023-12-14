@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Веб-тестирование</title>
@@ -79,10 +80,70 @@
                 <div class="mb-3">
                   <label for="inputMessage" class="form-label">Сообщение</label>
                   <textarea class="form-control" id="inputMessage" rows="4" placeholder="Введите ваше сообщение"></textarea>
+=======
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats facts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <img class="logo" src="images/cat_white.png">
+            <div class="title">Facts about cats</div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="search-form">
+                <div class="search-field-container">
+                    <div class="search-field-fallout">
+                        <input type="text" class="search-field">
+                        <div class="search-suggestion-container" data-url="http://cat-facts-api.std-900.ist.mospolytech.ru/autocomplete">
+                        </div>
+                    </div>
+                </div>
+                <!-- <input type="text" class="search-field"> -->
+                <button class="search-btn">Найти</button>
+            </div>
+            <div class="pagination-info">
+                <span>
+                    Показывать по
+                    <select name="per-page" class="per-page-btn">
+                        <option>5</option>
+                        <option selected>10</option>
+                        <option>15</option>
+                        <option>20</option>
+                        <option>25</option>
+                        <option>50</option>
+                        <option>100</option>
+                    </select>
+                    записей на странице
+                </span>
+                <span class="current-interval-info">
+                    Показаны записи с <span class="current-interval-start">1</span> по <span class="current-interval-end">10</span> из <span class="total-count">190</span>
+                </span>
+            </div>
+            <div class="facts-list" data-url="http://cat-facts-api.std-900.ist.mospolytech.ru/facts">
+                <div class="facts-list-item">
+                    <div class="item-content">
+                        Scottish sailer Alexander Selkirk once survived for 4 years on a deserted island thanks to feral cats that protected him
+                        from large rats during the night.
+                    </div>
+                    <div class="item-footer">
+                        <div class="author-name">
+                            Alex Wohlbruck
+                        </div>
+                        <div class="upvotes">
+                            4
+                        </div>
+                    </div>
+>>>>>>> d4b3a9e9f26d6bdcb3922f5e9c9cd26098ba402c
                 </div>
                 <button type="submit" class="btn btn-primary">Отправить</button>
               </form>
             </div>
+<<<<<<< HEAD
             <div class="col-lg-6">
               <h2>Контакты:</h2>
               <ul class="list-unstyled">
@@ -100,3 +161,20 @@
 </body>
 
 </html>
+=======
+            <div class="pagination">
+                <!-- <button class="btn first-page-btn" data-page="1">Первая страница</button>
+                <div class="pages-btn">facts-list
+                    <button class="btn active" data-page="1">1</button>
+                    <button class="btn" data-page="2">2</button>
+                    <button class="btn" data-page="3">3</button>
+                </div>
+                <button class="btn last-page-btn">Последняя страница</button> -->
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js" defer></script>
+</body>
+</html>
+>>>>>>> d4b3a9e9f26d6bdcb3922f5e9c9cd26098ba402c
