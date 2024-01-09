@@ -1,25 +1,6 @@
-const API_KEY = "7b693a08-10b5-41e0-b5bc-ad8203f49f31"; 
-const URL = "https://edu.std-900.ist.mospolytech.ru/api/routes"; 
-
-function displayRoutesTable(data) { 
-const tableBody = document.querySelector("#routetable"); 
-
-tableBody.innerHTML = ""; 
-
-for (let i = 0; i < data.length; i++) { 
-   let row =`
-            <tr class="table-row"> 
-               <td class="table-element">${data[i].name}</td> 
-               <td class="table-element">${data[i].description}</td> 
-               <td class="table-element">${data[i].mainObject}</td> 
-            </tr>`; 
-   tableBody.insertAdjacentHTML("beforeend", row); 
-   } 
-}
-
-//Получение данных о маршрутах 
+//Данные маршрутов
 function getRouteData() { 
-   fetch(`${URL}?api_key=${API_KEY}`, { 
+   fetch(`https://edu.std-900.ist.mospolytech.ru/api/routes?api_key=7b693a08-10b5-41e0-b5bc-ad8203f49f31`, { 
      method: "GET", 
 }) 
     .then((response) => { 
@@ -30,9 +11,22 @@ function getRouteData() {
      }) 
      .then((data) => { 
        console.log(data); 
-       displayRoutesTable(data, row); 
+       displayRouteTable(data);
      }); 
 } 
 
+function displayRouteTable(data) { 
+   const tableBody = document.querySelector(".routetable");
+   tableBody.innerHTML = ""; 
+   for (let i = 0; i < data.length; i++) { 
+   let row =`
+            <tr> 
+               <td class="p-3 border border-black">${data[i].name}</td> 
+               <td class="p-3 border border-black">${data[i].description}</td> 
+               <td class="p-3 border border-black">${data[i].mainObject}</td> 
+            </tr>`; 
+   tableBody.insertAdjacentHTML("beforeend", row); 
+   } 
+}
 
 getRouteData();
