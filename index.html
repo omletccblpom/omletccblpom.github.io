@@ -1,102 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Веб-тестирование</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
-
-<body class="bg-warning-subtle">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container">
-            <a class="navbar-brand">
-                <img src="images/sukhoi.png" alt="Логотип" width="150">
-              </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#2">О проекте</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#3">Контакты</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-    </header>
-    <section class="py-5 text-center" id="1">
-        <div class="container">
-          <h1 class="display-3">Разработка вертолета Ка-62</h1>
-          <p class="lead">Проект по созданию многоцелевого среднего вертолета Ка-62 направлен на создание нового, конкурентноспособного вертолета, способного занять освободившуюся нишу среднегабаритных вертолетов. ОКБ им. Сухого распологает всеми возможностями, чтобы подобный вертолёт был воплощен в жизнь в кратчайшие сроки.</p>
-        </div>
-      </section>
-
-      <section class="py-5" id="2">
-        <div class="container">
-             <h2 class="text-center mb-5 mt-5 display-4">Особенности и преимущества Ка-62</h2>
-          <div class="row">
-            <div class="col-lg-4 mb-4">
-              <h3>Мощность и экономичность</h3>
-              <p>С двумя двигателями ВК-1600В Ка-62 прекрасно подходит для транспортировок грузов до 2,5 тонн, или же 15 человек на борту + экипаж. С новыми двигателям Ка-62 в 2 раза более экономичен, чем Ми-8.</p>
-            </div>
-            <div class="col-lg-4 mb-4">
-              <h3>Надежность и легкость в обслуживании</h3>
-              <p>Ка-62 создан на основе самых современных технологий авиастроения, позволяя сделать вертолет устойчивым даже при ветре в 10 м/с, а благодаря модульному дизайну Ка-62 гораздо более прост в техобслуживании, чем аналогичные вертолеты.</p>
-            </div>
-            <div class="col-lg-4 mb-4">
-              <h3>Обучение экипажа и наземного персонала</h3>
-              <p>Благодаря самым современным решениям в области БРЭО, Ка-62 легок в переобучении персонала как с вертолетов меньших размеров, так и с больших. Пилот Ми-8 будет удивлен, когда увидит, насколько удобен полет на Ка-62!</p>
-            </div>
-            <div>
-                <img src="images/Ka-62.jpg" class="img-fluid" alt="Изображение проекта">
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-5 bg-light bg-info-subtle" id="3">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <h2>Свяжитесь с нами</h2>
-              <p>Оставьте нам сообщение и мы свяжемся с вами в кратчайшие сроки.</p>
-              <form>
-                <div class="mb-3">
-                  <label for="inputName" class="form-label">Ваше имя</label>
-                  <input type="text" class="form-control" id="inputName" placeholder="Введите ваше имя">
+<html lang="ru" class="h-100">
+    <head>
+        <meta name="viewport">
+        <meta charset="utf-8" content="width=device-width, initial-scale=1.0">
+        <title>Silly Cat Walks</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    </head>
+    <body class="d-flex flex-column h-100 bg-light ">
+        <header class="bg-gradient bg-info">
+            <nav class="navbar navbar-expand-xl">
+                <div class="container">
+                    <a class="navbar-brand">
+                        <img src="images/cat_silly.png" alt="Лого Прогулок" width="75">
+                    </a>
+                    <p class="navbar-nav px-3">Silly Cat Walks</p>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item px-3"><a class="nav-link" href="#">Личный кабинет</a></li>
+                            <li class="nav-item px-3"><a class="nav-link" href="#about">Наша компания</a></li>
+                            <li class="nav-item px-3"><a class="nav-link" href="#route">Выбор маршрута</a></li>
+                            <li class="nav-item px-3"><a class="nav-link" href="#contacts">Контакты</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="mb-3">
-                  <label for="inputEmail" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="inputEmail" placeholder="Введите ваш email">
-                </div>
-                <div class="mb-3">
-                  <label for="inputMessage" class="form-label">Сообщение</label>
-                  <textarea class="form-control" id="inputMessage" rows="4" placeholder="Введите ваше сообщение"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Отправить</button>
-              </form>
-            </div>
-            <div class="col-lg-6">
-              <h2>Контакты:</h2>
-              <ul class="list-unstyled">
-                <li>Телефон: +7 (XXX) XXX-XX-XX</li>
-                <li>Email: lordofbeer@memeware.net</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      
+            </nav>
+        </header>
         
+        <section class="text-emphasis-light">
+            <h2 id="about" class="text-center my-4">Наша компания</h2>
+            <div class="d-md-flex justify-content-center text-center row">
+                <div class="col-md-3">
+                    <img width="450px" src="images/kremlin.jpg">
+                </div>
+                <div class="col-md-3">
+                    <h4>Кто мы?</h4>
+                    <p>Silly Cat Walks - знаменитая компания, предоставляющая услуги гидов по самым живописным и интересным местам Москвы!</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Наши гиды</h4>
+                    <p>Каждый из наших гидов знает Москву в пределах Третьего Транспортного Кольца (TTK) как свои пять пальцев! C ними вы можете не беспокоиться, что потеряетесь.</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Отзывы клиентов</h4>
+                    <p>Вы всегда можете оставить отзыв по номеру, указанному в <a href="#contacts">Контактах</a>, если вас что-то не устроило! Мы будем рады ответить вам.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container d-flex">
+                <h3 id="route" class="col-md-6 text-center">Выбор маршрута</h3>
+                <h3 class="col-md-6 text-center">Выбор гида</h3>
+            </div>
+            <div class="container">
+                <table class>
+                    <thead>
+                        <tr>
+                            <th>ID маршрута</th>
+                            <th>Имя</th>
+                            <th>Описание</th>
+                            <th>Красивые места</th>
+                            <th>Координаты</th>
+                        </tr>
+                    </thead>
+                    <tbody class="routetable">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
-
+        <footer class="footer mt-auto py-3 bg-dark bg-gradient">
+            <div class="container text-light">
+                <h4 id="contacts">Контакты</h4>
+                <ul class="list-unstyled row">
+                    <li class="col-md-3 text-start">Телефон: +8 (800) 555-35-35<br>E-Mail: lordofbeer@memeware.net</li>
+                    <li class="col-md-9 text-end">&#169 Silly Cat Walks, 2024<br>All rights reserved.</li>
+                </ul>
+            </div>
+        </footer>
+        <script src="main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
 </html>
