@@ -5,7 +5,7 @@ fetch('https://edu.std-900.ist.mospolytech.ru/api/routes?api_key=7b693a08-10b5-4
 })
 
 .then(function(products){
-   let placeholder = document.querySelector("#data-output");
+   let placeholder = document.querySelector("#routetable");
    let out = "";
    for(let route of products){
       out += `
